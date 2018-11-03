@@ -1,0 +1,217 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block content %}
+
+<div class="container">
+
+
+
+
+
+
+  <!-- About Us Area -->
+  <section class="about_us_area row">
+      <div class="container-fluid">
+        <div class="subtittle"><br><br><br><br>
+            <h2>RT Details </h2>
+        </div>
+        <br>
+          <div class="row">
+            <br>
+
+            <table class="table table-striped table-bordered table-hover">
+
+              <tbody>
+                <!-- <tr>
+
+                  <td>Row : {{rt_detail.row}}</td>
+                  <td>Tank :{{rt_detail.tank}} </td>
+                </tr> -->
+
+      <tr>
+          <td colspan="4"><img src="{% static 'images/spg.png' %}"  /></td>
+          <td colspan="6" ><p  style="font-weight:bold;margin-top:5%;" class="text-center h4 ">LIDCO, Pars SEE Zone, Assaluyeh
+Integrated Methanol and Ammonia Plant
+3000 MTPD  MeOH / 900 MTPD NH3 Project</p></td>
+          <td colspan="4"><img src="{% static 'images/nargan.png' %}"  /></td>
+      </tr>
+      <tr>
+          <td class="h5" colspan="5">Quality Control Dept</td>
+          <td class="text-center h4" colspan="4">RADIOGRAPHIC EXAMINATION RESULT</td>
+          <td colspan="5"></td>
+      </tr>
+      <tr>
+          <td class="h5" colspan="4">  TANK NO.: <span style='font-weight:normal'> {{rt_detail.tank}}</span></td>
+          <td class="h5"  colspan="3">Report No.: </td>
+          <td class="h5"  colspan="3">Decay Chart:   </td>
+          <td  class="h5" colspan="4">Form No. :</td>
+      </tr>
+      <tr>
+          <td  class="h5" colspan="4">  Location :</td>
+          <td class="h5"  colspan="3">  Type of  Film : </td>
+          <td  class="h5" colspan="3">SFD:      </td>
+          <td  class="h5" colspan="4"> Page : </td>
+      </tr>
+      <tr>
+          <td class="h5" colspan="4"> Material Specification : </td>
+          <td class="h5" colspan="3"> Source Type:   </td>
+          <td class="h5" colspan="3"> Exposure Time:  </td>
+          <td class="h5" colspan="4">  I.Q.I - Type :    </td>
+      </tr>
+      <tr>
+          <td  class="h5" colspan="4">  Activity : RADIOGRAPHIC TEST</td>
+          <td  class="h5" colspan="3">Density : </td>
+          <td  class="h5" colspan="3"> </td>
+          <td  class="h5" colspan="4"> Sensitivity :    </td>
+      </tr>
+      <tr>
+          <td class="h5" colspan="5">  INNER/OUTER : OUTER</td>
+          <td class="h5" colspan="4">Date :</td>
+          <td class="h5"  colspan="5">Tech. :    SWSI ●     DWSI o      DWDI o</td>
+      </tr>
+      <tr>
+          <td class="h5 text-center " >Item</td>
+          <td class="h5 text-center " >Gamma -RAY No.</td>
+          <td class="h5 text-center " >Joint No.</td>
+          <td class="h5 text-center " >Welder Stamp</td>
+          <td class="h5 text-center " > RT No.</td>
+          <td class="h5 text-center " >Thk. of Material (mm) <hr> From - To</td>
+          <td class="h5 text-center " >Segment(cm)</td>
+          <td class="h5 text-center " > Inspection-Type </td>
+          <td class="h5 text-center " >Inspection-Location</td>
+          <td class="h5 text-center " >RS</td>
+          <td class="h5 text-center " >REP</td>
+          <td class="h5 text-center " >RT</td>
+          <td class="h5 text-center " >ACC</td>
+          <td class="h5 text-center " >Remark</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+      </tr>
+      <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+      </tr>
+      <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+      </tr>
+      <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+      </tr>
+      <tr>
+          <td class="h5" colspan="14">  Abbreviation For Result :	 	  </td>
+      </tr>
+      <tr>
+        <td class="h5" colspan="3">    ACC : Acceptable</td>
+        <td class="h5" colspan="3"> RT: Retake</td>
+        <td class="h5" colspan="2"> REP : Repair</td>
+        <td class="h5" colspan="3"> RS : Reshoot</td>
+        <td class="h5" colspan="4"> </td>
+      </tr>
+      <tr>
+        <td class="h5" colspan="14">    Defect Code :	 </td>
+      </tr>
+      <tr>
+        <td class="h5" colspan="3">    C : Crack</td>
+        <td class="h5" colspan="3"> BT : Burn Through</td>
+        <td class="h5" colspan="2">  CP : Cluster p.</td>
+        <td class="h5" colspan="3">EP : Excessive Penetration</td>
+        <td class="h5" colspan="2">   UC : Under Cut</td>
+        <td class="h5" colspan="2">P : Porosity</td>
+      </tr>
+      <tr>
+        <td class="h5" colspan="3">  LOP : Lack of  Penetration</td>
+        <td class="h5" colspan="3">LOF : Lack of  Fusion</td>
+        <td class="h5" colspan="2"> NF : Non Fusion</td>
+        <td class="h5" colspan="3">S : Slag Inclusion</td>
+        <td class="h5" colspan="2"> WH : Worm Hole</td>
+        <td class="h5" colspan="2"></td>
+      </tr>
+      <tr>
+            <td class="h5 text-center " colspan="14" >Remark : This document is prepared in accordance with the standards and specifications of the project, and the signatories confirm the validity of the above activities</td>
+      </tr>
+      <tr>
+        <td class="h5" colspan="4">NDT COMPANY</td>
+        <td class="h5" colspan="4">SPG</td>
+        <td class="h5" colspan="4">TPA</td>
+        <td class="h5" colspan="4"> NARGAN/LIDCO</td>
+
+      </tr>
+      <tr>
+          <td class="h5" colspan="4">NAME:<br>DATE :<br>SIGN :</td>
+          <td class="h5" colspan="4">NAME:<br>DATE :<br>SIGN :</td>
+          <td class="h5" colspan="4">NAME:<br>DATE :<br>SIGN :</td>
+          <td class="h5" colspan="4">NAME:<br>DATE :<br>SIGN :</td>
+
+
+              </tbody>
+            </table>
+            <div class="table-responsive">
+
+</div>
+
+
+            <br>
+            <br>
+
+
+
+          </div>
+      </div>
+  </section>
+  <!-- End About Us Area -->
+</div>
+
+
+{% endblock %}

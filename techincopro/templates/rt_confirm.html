@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block content %}
+
+{% load bootstrap %}
+<div class="container">
+
+
+
+
+
+
+  <!-- About Us Area -->
+  <section class="about_us_area row">
+      <div class="container-fluid">
+        <div class="subtittle"><br><br><br><br>
+            <h1>Do you want to confirm the recored?</h1>
+        </div>
+        <br>
+          <div class="row">
+            <br>
+
+
+          <form method="post">{% csrf_token %}
+          {{ form|bootstrap }}
+          <input  class="btn btn-warning" type="submit" value="Submit" />
+</form>
+            <br>
+            <br>
+
+
+
+          </div>
+      </div>
+  </section>
+  <!-- End About Us Area -->
+</div>
+
+
+{% endblock %}

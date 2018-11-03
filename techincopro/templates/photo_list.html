@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block content %}
+
+<div class="container">
+
+
+
+
+
+
+  <!-- About Us Area -->
+  <section class="about_us_area row">
+      <div class="container-fluid">
+        <div class="subtittle"><br><br><br><br>
+            <h2>Gallery </h2>
+        </div>
+        <br>
+          <div class="row">
+            <br>
+  {% for obj in tanks_photo %}
+            <img src="{{ obj.first_image.url }}" alt="" style="width:100%;height:100px">
+
+{{ obj.first_image.url }}
+{%endfor %}
+            <br>
+            <br>
+
+
+
+          </div>
+      </div>
+  </section>
+  <!-- End About Us Area -->
+</div>
+
+
+{% endblock %}

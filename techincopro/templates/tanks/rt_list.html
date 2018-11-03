@@ -1,0 +1,262 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block content %}
+
+<div class="container">
+
+
+
+
+  <!-- About Us Area -->
+  <section class="about_us_area row">
+      <div class="container-fluid">
+        <div class="subtittle"><br><br><br><br>
+            <h2><a href="{% url 'tanks:rt_list_form' tank='T030A' %}">  <img src="{% static 'images/reports.jpeg' %}" height="100px" /> RT Report</a> </h2>
+        </div>
+          <div class="row">
+            <br>
+
+
+
+
+
+
+
+                      <div class="panel panel-primary filterable" >
+                          <div class="panel-heading" style="background-color:orange " >
+                              <h3 class="panel-title">.</h3>
+                              <div class="pull-right">
+
+                              </div>
+                          </div>
+                          <div class="table-responsive" >
+                          <table class="table">
+                              <thead>
+                                  <tr class="filters">
+                                      <th><input type="text" class="form-control"  style="width:55px" placeholder="Row" ></th>
+                                      <th><input type="text" class="form-control" style="width:160px" placeholder="Tank" ></th>
+                                      <th><input type="text" class="form-control" style="width:160px" placeholder="location 1" ></th>
+                                      <th><input type="text" class="form-control" style="width:160px" placeholder="Location 2" ></th>
+                                      <th><input type="text" class="form-control" style="width:160px" placeholder="Joint Code 1" ></th>
+                                      <th><input type="text" class="form-control" style="width:160px" placeholder="Joint No 1" ></th>
+                                      <th><input type="text" class="form-control" style="width:160px" placeholder="Joint Code 2" ></th>
+                                      <th><input type="text" class="form-control" style="width:150px" placeholder="Joint No 2" ></th>
+
+                                    <th><input type="text" class="form-control" style="width:150px" placeholder="Req RT 1ST No"</th>
+                                    <th><input type="text" class="form-control" style="width:150px" placeholder="Req RT 1ST Date"</th>
+                                    <th><input type="text" class="form-control" style="width:150px" placeholder="RT No"</th>
+                                    <th><input type="text" class="form-control" style="width:150px" placeholder="Req RT Segment 1"</th>
+                                    <th><input type="text" class="form-control" style="width:150px" placeholder="Req RT Segment 2"</th>
+
+                                    <th><input type="text" class="form-control" style="width:150px" placeholder="Reslult 1ST Date"</th>
+                                    <th><input type="text" class="form-control" style="width:150px" placeholder="Reslult 1ST No"</th>
+                                    <th><input type="text" class="form-control" style="width:150px" placeholder="Reslult 1ST Defect"</th>
+                                    <th><input type="text" class="form-control" style="width:150px" placeholder="Reslult 1ST Segment"</th>
+                                    <th><input type="text" class="form-control" style="width:150px" placeholder="Reslult 1ST Result"</th>
+
+                                    <th><input type="text" class="form-control" style="width:150px" placeholder="Req RT 2ND No"</th>
+                                    <th><input type="text" class="form-control" style="width:150px" placeholder="Req RT 2ND Date"</th>
+                                    <th><input type="text" class="form-control" style="width:150px" placeholder="Reslult 2ND Date"</th>
+                                    <th><input type="text" class="form-control" style="width:150px" placeholder="Reslult 2ND No"</th>
+                                    <th><input type="text" class="form-control" style="width:150px" placeholder="Reslult 2ND Defect"</th>
+                                    <th><input type="text" class="form-control" style="width:150px" placeholder="Reslult 2ND Segment"</th>
+                                    <th><input type="text" class="form-control" style="width:150px" placeholder="Reslult 2ND Result"</th>
+
+                                      <th><input type="text" class="form-control" style="width:150px" placeholder="Req RT 3RD No"</th>
+                                      <th><input type="text" class="form-control" style="width:150px" placeholder="Req RT 3RD Date"</th>
+                                      <th><input type="text" class="form-control" style="width:150px" placeholder="Reslult 3RD Date"</th>
+                                      <th><input type="text" class="form-control" style="width:150px" placeholder="Reslult 3RD No"</th>
+                                      <th><input type="text" class="form-control" style="width:150px" placeholder="Reslult 3RD Defect"</th>
+                                      <th><input type="text" class="form-control" style="width:150px" placeholder="Reslult 3RD Segment"</th>
+                                      <th><input type="text" class="form-control" style="width:150px" placeholder="Reslult 3RD Result"</th>
+
+                                      <th><input type="text" class="form-control" style="width:150px" placeholder="Req RT 4TH No"</th>
+                                      <th><input type="text" class="form-control" style="width:150px" placeholder="Req RT 4TH Date"</th>
+                                      <th><input type="text" class="form-control" style="width:150px" placeholder="Reslult 4TH Date"</th>
+                                      <th><input type="text" class="form-control" style="width:150px" placeholder="Reslult 4TH No"</th>
+                                      <th><input type="text" class="form-control" style="width:150px" placeholder="Reslult 4TH Defect"</th>
+                                      <th><input type="text" class="form-control" style="width:150px" placeholder="Reslult 4TH Segment"</th>
+                                      <th><input type="text" class="form-control" style="width:150px" placeholder="Reslult 4TH Result"</th>
+
+                                      <th><input type="text" class="form-control" style="width:150px" placeholder="Req RT 5TH No"</th>
+                                      <th><input type="text" class="form-control" style="width:150px" placeholder="Req RT 5TH Date"</th>
+                                      <th><input type="text" class="form-control" style="width:150px" placeholder="Reslult 5TH Date"</th>
+                                      <th><input type="text" class="form-control" style="width:150px" placeholder="Reslult 5TH No"</th>
+                                      <th><input type="text" class="form-control" style="width:150px" placeholder="Reslult 5TH Defect"</th>
+                                      <th><input type="text" class="form-control" style="width:150px" placeholder="Reslult 5TH Segment"</th>
+                                      <th><input type="text" class="form-control" style="width:150px" placeholder="Reslult 5TH Result"</th>
+
+                                      <th><input type="text" class="form-control" style="width:150px" placeholder="Final Result Welder"</th>
+                                      <th><input type="text" class="form-control" style="width:150px" placeholder="Final Result Joint"</th>
+                                      <th><input type="text" class="form-control" style="width:150px" placeholder="Created At"</th>
+                                      <th><input type="text" class="form-control" style="width:150px" placeholder="Updated At"</th>
+                                      <th><input type="text" class="form-control filter-top"   placeholder="Doc Rev 1"   </th>
+                                      <th><input type="text" class="form-control filter-top"   placeholder="Doc Rev 2"   </th>
+                                      <th><input type="text" class="form-control filter-top"   placeholder="Doc Rev 3"   </th>
+                                      <th><input type="text" class="form-control filter-top"   placeholder="Doc Rev 4"   </th>
+                                      <th><input type="text" class="form-control filter-top"   placeholder="Doc Rev 5"   </th>
+                                      <th><input type="text" class="form-control" style="width:150px" placeholder="Confirmation"</th>
+
+                                  </tr>
+                                  <tr>
+                                    <td class="warning">Row</td>
+                                    <td class="warning">Tank</td>
+                                    <td class="warning">Location 1</td>
+                                    <td class="warning">Location 2</td>
+                                    <td class="warning">Joint Code 1</td>
+                                    <td class="warning">Joint No 1</td>
+                                    <td class="warning">Joint Code 2</td>
+                                    <td class="warning">Joint No 2</td>
+                                    <td class="warning">Req RT 1ST No</td>
+                                    <td class="warning">Req RT 1ST Date</td>
+                                    <td class="warning">RT No</td>
+                                    <td class="warning">Req RT Segment 1</td>
+                                    <td class="warning">Req RT Segment 2</td>
+
+                                    <td class="warning">Reslult 1ST Date</td>
+                                    <td class="warning">Reslult 1ST No</td>
+                                    <td class="warning">Reslult 1ST Defect</td>
+                                    <td class="warning">Reslult 1ST Segment</td>
+                                    <td class="warning">Reslult 1ST Result</td>
+
+                                    <td class="warning">Req RT 2ND No</td>
+                                    <td class="warning">Req RT 2ND Date</td>
+                                    <td class="warning">Reslult 2ND Date</td>
+                                    <td class="warning">Reslult 2ND No</td>
+                                    <td class="warning">Reslult 2ND Defect</td>
+                                    <td class="warning">Reslult 2ND Segment</td>
+                                    <td class="warning">Reslult 2ND Result</td>
+
+                                    <td class="warning">Req RT 3RD No</td>
+                                    <td class="warning">Req RT 3RD Date</td>
+                                    <td class="warning">Reslult 3RD Date</td>
+                                    <td class="warning">Reslult 3RD No</td>
+                                    <td class="warning">Reslult 3RD Defect</td>
+                                    <td class="warning">Reslult 3RD Segment</td>
+                                    <td class="warning">Reslult 3RD Result</td>
+
+                                    <td class="warning">Req RT 4TH No</td>
+                                    <td class="warning">Req RT 4TH Date</td>
+                                    <td class="warning">Reslult 4TH Date</td>
+                                    <td class="warning">Reslult 4TH No</td>
+                                    <td class="warning">Reslult 4TH Defect</td>
+                                    <td class="warning">Reslult 4TH Segment</td>
+                                    <td class="warning">Reslult 4TH Result</td>
+
+                                    <td class="warning">Req RT 5TH No</td>
+                                    <td class="warning">Req RT 5TH Date</td>
+                                    <td class="warning">Reslult 5TH Date</td>
+                                    <td class="warning">Reslult 5TH No</td>
+                                    <td class="warning">Reslult 5TH Defect</td>
+                                    <td class="warning">Reslult 5TH Segment</td>
+                                    <td class="warning">Reslult 5TH Result</td>
+
+                                    <td class="warning">Final Result Welder</td>
+                                    <td class="warning">Final Result Joint</td>
+                                    <td class="warning">Created At</td>
+                                    <td class="warning">Updated At</td>
+
+                                    <td class="warning">Doc Rev 1</td>
+                                    <td class="warning">Doc Rev 2</td>
+                                    <td class="warning">Doc Rev 3</td>
+                                    <td class="warning">Doc Rev 4</td>
+                                    <td class="warning">Doc Rev 5</td>
+
+
+                                    <td class="warning">Confirmation</td>
+                                  </tr>
+                              </thead>
+                              <tbody>
+                                {% for obj in object_list %}
+
+                                <tr>
+                                  <td class="active">{{obj.row}}</td>
+                                  <td class="active">{{obj.tank}}</td>
+                                  <td class="active">{{obj.location_1}}</td>
+                                  <td class="active">{{obj.location_2}}</td>
+                                  <td class="active">{{obj.joint_code_1}}</td>
+                                  <td class="active">{{obj.joint_no_1}}</td>
+                                  <td class="active">{{obj.joint_code_2}}</td>
+                                  <td class="active">{{obj.joint_no_2}}</td>
+                                  <td class="active">{{obj.Req_RT_1ST_No}}</td>
+                                  <td class="active">{{obj.Req_RT_1ST_Date}}</td>
+                                  <td class="active">{{obj.RT_No}}</td>
+                                  <td class="active">{{obj.Req_RT_Segment1}}</td>
+                                  <td class="active">{{obj.Req_RT_Segment2}}</td>
+
+                                  <td class="active">{{obj.Result_1ST_Date}}</td>
+                                  <td class="active">{{obj.Result_1ST_No}}</td>
+                                  <td class="active">{{obj.Result_1ST_Defect}}</td>
+                                  <td class="active">{{obj.Result_1ST_Segment}}</td>
+                                  <td class="active">{{obj.Result_1ST_Result}}</td>
+
+                                  <td class="active">{{obj.Req_RT_2ND_No}}</td>
+                                  <td class="active">{{obj.Req_RT_2ND_Date}}</td>
+                                  <td class="active">{{obj.Result_2ND_Date}}</td>
+                                  <td class="active">{{obj.Result_2ND_No}}</td>
+                                  <td class="active">{{obj.Result_2ND_Defect}}</td>
+                                  <td class="active">{{obj.Result_2ND_Segment}}</td>
+                                  <td class="active">{{obj.Result_2ND_Result}}</td>
+
+                                  <td class="active">{{obj.Req_RT_3RD_No}}</td>
+                                  <td class="active">{{obj.Req_RT_3RD_Date}}</td>
+                                  <td class="active">{{obj.Result_3RD_Date}}</td>
+                                  <td class="active">{{obj.Result_3RD_No}}</td>
+                                  <td class="active">{{obj.Result_3RD_Defect}}</td>
+                                  <td class="active">{{obj.Result_3RD_Segment}}</td>
+                                  <td class="active">{{obj.Result_3RD_Result}}</td>
+
+                                  <td class="active">{{obj.Req_RT_4TH_No}}</td>
+                                  <td class="active">{{obj.Req_RT_4TH_Date}}</td>
+                                  <td class="active">{{obj.Result_4TH_Date}}</td>
+                                  <td class="active">{{obj.Result_4TH_No}}</td>
+                                  <td class="active">{{obj.Result_4TH_Defect}}</td>
+                                  <td class="active">{{obj.Result_4TH_Segment}}</td>
+                                  <td class="active">{{obj.Result_4TH_Result}}</td>
+
+                                  <td class="active">{{obj.Req_RT_5TH_No}}</td>
+                                  <td class="active">{{obj.Req_RT_5TH_Date}}</td>
+                                  <td class="active">{{obj.Result_5TH_Date}}</td>
+                                  <td class="active">{{obj.Result_5TH_No}}</td>
+                                  <td class="active">{{obj.Result_5TH_Defect}}</td>
+                                  <td class="active">{{obj.Result_5TH_Segment}}</td>
+                                  <td class="active">{{obj.Result_5TH_Result}}</td>
+
+                                  <td class="active">{{obj.Final_Result_Welder}}</td>
+                                  <td class="active">{{obj.Final_Result_Joint}}</td>
+                                  <td class="active">{{obj.created_at}}</td>
+                                  <td class="active">{{obj.updated_at}}</td>
+                                  <td class="active">{{obj.doc_rev_1}}</td>
+                                  <td class="active">{{obj.doc_rev_2}}</td>
+                                  <td class="active">{{obj.doc_rev_3}}</td>
+                                  <td class="active">{{obj.doc_rev_4}}</td>
+                                  <td class="active">{{obj.doc_rev_5}}</td>
+
+                                  <td class="active"><a href="{% url 'tanks:rt_confirm_' pk=obj.pk %}">{% if obj.confirmation == True  %}   <span style="color:green">Confirmed</span>  {% else  %} Confirm {% endif %}</a></td>
+                            </tr>
+
+
+                                {% endfor %}
+                              </tbody>
+                          </table>
+                      </div>
+
+
+</div>
+
+
+
+            <br>
+            <br>
+
+
+
+          </div>
+      </div>
+  </section>
+  <!-- End About Us Area -->
+</div>
+
+
+{% endblock %}

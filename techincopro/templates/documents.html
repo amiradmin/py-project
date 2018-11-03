@@ -1,0 +1,96 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block content %}
+
+<div class="container">
+
+
+
+
+
+
+  <!-- About Us Area -->
+  <section class="about_us_area row">
+      <div class="container-fluid">
+        <div class="subtittle"><br><br><br><br>
+            <h2>Documets  </h2>
+        </div>
+          <div class="row">
+            <br>
+
+
+
+
+
+
+<div class="panel panel-primary filterable" >
+    <div class="panel-heading" style="background-color:orange " >
+        <h3 class="panel-title">.</h3>
+        <div class="pull-right">
+
+        </div>
+    </div>
+
+
+
+<div class="table-responsive" >
+<table class="table">
+    <thead>
+        <tr class="filters">
+            <th></th>
+            <th><input type="text" class="form-control" style="width:150px" placeholder="Name" ></th>
+            <th><input type="text" class="form-control" style="width:150px" placeholder="Revision" ></th>
+            <th><input type="text" class="form-control" style="width:150px" placeholder="Tank" ></th>
+            <th><input type="text" class="form-control" style="width:150px" placeholder="Project" ></th>
+        </tr>
+        <tr>
+          <td class="warning">Image</td>
+          <td class="warning">Name</td>
+          <td class="warning">Revision</td>
+          <td class="warning">Tank</td>
+            <td class="warning">Project</td>
+
+        </tr>
+    </thead>
+    <tbody>
+      {% for obj in documentlist %}
+<tr>
+  <td class="active"><a href="{{obj.file.url }}">{{ obj.image_tag  }}</a></td>
+
+<td class="active">{{obj.name}}</td>
+
+<td class="active">{{obj.revision}}</td>
+<td class="active">{{obj.tank}}</td>
+<td class="active">{{obj.project}}</td>
+  </tr>
+
+
+      {% endfor %}
+    </tbody>
+</table>
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+            <br>
+            <br>
+
+
+
+          </div>
+      </div>
+  </section>
+  <!-- End About Us Area -->
+</div>
+
+
+{% endblock %}

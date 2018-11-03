@@ -1,0 +1,377 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block content %}
+
+<div class="container">
+
+
+
+
+
+
+  <!-- About Us Area -->
+  <section class="about_us_area row">
+      <div class="container-fluid">
+        <div class="subtittle"><br><br><br><br>
+            <h2>General Welding! </h2>
+        </div>
+
+
+
+        <div class="panel panel-primary filterable" >
+            <div class="panel-heading" style="background-color:orange " >
+                <h3 class="panel-title">.</h3>
+                <div class="pull-right">
+
+                </div>
+            </div>
+            <div class="table-responsive" >
+            <table class="table">
+                <thead>
+                    <tr class="filters">
+
+
+                        <th><input type="text" class="form-control filter-top"   placeholder="Tank"</th>
+                        <th><input type="text" class="form-control filter-top"   placeholder="row"</th>
+                        <th><input type="text" class="form-control filter-top"   placeholder="Location 1"</th>
+                        <th><input type="text" class="form-control filter-top"   placeholder="Location 2"</th>
+                        <th><input type="text" class="form-control filter-top"   placeholder="Joint Code 1"</th>
+                        <th><input type="text" class="form-control filter-top"   placeholder="Graph"</th>
+                        <th><input type="text" class="form-control filter-top"   placeholder="Joint No 1"</th>
+                        <th><input type="text" class="form-control filter-top"   placeholder="Joint Code 2"</th>
+                        <th><input type="text" class="form-control filter-top"   placeholder="Joint No 2"</th>
+
+                        <th><input type="text" class="form-control filter-top"   placeholder="Thickness 1"</th>
+                        <th><input type="text" class="form-control filter-top"   placeholder="Thinkness 2"</th>
+                        <th><input type="text" class="form-control filter-top"   placeholder="Joint Length"</th>
+                        <th><input type="text" class="form-control filter-top"   placeholder="Joint Type"</th>
+                        <th><input type="text" class="form-control filter-top"   placeholder="Material 1"</th>
+                        <th><input type="text" class="form-control filter-top"   placeholder="Material 2"</th>
+
+                        <th><input type="text" class="form-control filter-top"   placeholder="WPD No"</th>
+                        <th><input type="text" class="form-control filter-top"   placeholder="Fitup Date"</th>
+                        <th><input type="text" class="form-control filter-top"   placeholder="Fitup No"</th>
+                        <th><input type="text" class="form-control filter-top"   placeholder="Welding No"</th>
+                        <th><input type="text" class="form-control filter-top"   placeholder="Welding Date"</th>
+                        <th><input type="text" class="form-control filter-top"   placeholder="Welder 1"</th>
+                        <th><input type="text" class="form-control filter-top"   placeholder="Welder 2"</th>
+                        <th><input type="text" class="form-control filter-top"   placeholder="Welder 3"</th>
+                        <th><input type="text" class="form-control filter-top"   placeholder="Welder 4"</th>
+
+                        <th><input type="text" class="form-control filter-top"   placeholder="VBT_REQ_date"   </th>
+                        <th><input type="text" class="form-control filter-top"   placeholder="VBT_REQ_no"   </th>
+                        <th><input type="text" class="form-control filter-top"   placeholder="VBT_REP_date"  </th>
+                        <th><input type="text" class="form-control filter-top"   placeholder="VBT_REP_No"  </th>
+                        <th><input type="text" class="form-control filter-top"   placeholder="OilTest_REQ_Date"   </th>
+                        <th><input type="text" class="form-control filter-top"   placeholder="OilTest_REQ_No"   </th>
+
+                        <th><input type="text" class="form-control filter-top"   placeholder="OilTest_REP_Date"  </th>
+                        <th><input type="text" class="form-control filter-top"   placeholder="OilTest_REP_No"  </th>
+                        <th><input type="text" class="form-control filter-top"   placeholder="HNT_REQ_Date"  </th>
+                        <th><input type="text" class="form-control filter-top"   placeholder="HNT_REQ_No"  </th>
+                        <th><input type="text" class="form-control filter-top"   placeholder="HT_Value"  </th>
+                        <th><input type="text" class="form-control filter-top"   placeholder="HNT_REP_Date"  </th>
+                        <th><input type="text" class="form-control filter-top"   placeholder="HNT_REP_No"  </th>
+
+                        <th><input type="text" class="form-control filter-top"   placeholder="PT_REQ_Date"</th>
+                        <th><input type="text" class="form-control filter-top"   placeholder="PT_REQ_No"</th>
+                        <th><input type="text" class="form-control filter-top"   placeholder="PT_Result"</th>
+                        <th><input type="text" class="form-control filter-top"   placeholder="PT_REP_Date"</th>
+                        <th><input type="text" class="form-control filter-top"   placeholder="PT_REP_No"</th>
+                        <th><input type="text" class="form-control filter-top"   placeholder="MT_REQ_Date"</th>
+                        <th><input type="text" class="form-control filter-top"   placeholder="MT_REQ_No"</th>
+                        <th><input type="text" class="form-control filter-top"   placeholder="MT_REP_Date"</th>
+                        <th><input type="text" class="form-control filter-top"   placeholder="MT_REP_No"</th>
+                        <th><input type="text" class="form-control filter-top"   placeholder="HNT_REQ_Date"</th>
+                        <th><input type="text" class="form-control filter-top"   placeholder="HNT_REQ_No"</th>
+                        <th><input type="text" class="form-control filter-top"   placeholder="HNT_Value"</th>
+                        <th><input type="text" class="form-control filter-top"   placeholder="HNT_REP_Date"</th>
+                        <th><input type="text" class="form-control filter-top"   placeholder="HNT_REP_No"<th>
+
+                        <th><input type="text" class="form-control filter-top"   placeholder="RT_Lenght"   </th>
+                        <th><input type="text" class="form-control filter-top"   placeholder="RT_Final_Result"   </th>
+                        <th><input type="text" class="form-control filter-top"   placeholder="UT_Lenght"   </th>
+                        <th><input type="text" class="form-control filter-top"   placeholder="UT_Final_Result"   </th>
+                        <th><input type="text" class="form-control filter-top"   placeholder="PWHT_REQ_Date"   </th>
+                        <th><input type="text" class="form-control filter-top"   placeholder="PWHT_REQ_No"   </th>
+                        <th><input type="text" class="form-control filter-top"   placeholder="PWHT_REP_Date"   </th>
+                        <th><input type="text" class="form-control filter-top"   placeholder="PWHT_REP_No"   </th>
+                        <th><input type="text" class="form-control filter-top"   placeholder="Peaking_Before_Weld_Date"   </th>
+                        <th><input type="text" class="form-control filter-top"   placeholder="Peaking_Before_Weld_No"   </th>
+                        <th><input type="text" class="form-control filter-top"   placeholder="Peaking_Before_Weld_Value"   </th>
+
+                        <th><input type="text" class="form-control filter-top"   placeholder="Peaking_Before_Weld_Deviation"</th>
+                        <th><input type="text" class="form-control filter-top"   placeholder="Peaking_After_Weld_Date"</th>
+                        <th><input type="text" class="form-control filter-top"   placeholder="Peaking_After_Weld_No"</th>
+                        <th><input type="text" class="form-control filter-top"   placeholder="Peaking_After_Weld_Value"</th>
+                        <th><input type="text" class="form-control filter-top"   placeholder="Peaking_After_Weld_Deviation"</th>
+                        <th><input type="text" class="form-control filter-top"   placeholder="Banding_Before_Weld_Date"</th>
+                        <th><input type="text" class="form-control filter-top"   placeholder="Banding_Before_Weld_No"</th>
+                        <th><input type="text" class="form-control filter-top"   placeholder="Banding_Before_Weld_Value"</th>
+                        <th><input type="text" class="form-control filter-top"   placeholder="Banding_Before_Weld_Deviation"</th>
+                        <th><input type="text" class="form-control filter-top"   placeholder="Banding_After_Weld_Date"</th>
+                        <th><input type="text" class="form-control filter-top"   placeholder="Banding_After_Weld_No"</th>
+                        <th><input type="text" class="form-control filter-top"   placeholder="Banding_After_Weld_Value"</th>
+                        <th><input type="text" class="form-control filter-top"   placeholder="Banding_After_Weld_Deviation"</th>
+</tr>
+
+                    <tr>
+                      <td class="warning">row</td>
+                      <td class="warning">Tank</td>
+                      <td class="warning">Location 1</td>
+                      <td class="warning">Location 2</tad>
+                      <td class="warning">Joint Code 1</td>
+                      <td class="warning">Graph</td>
+                      <td class="warning">Joint No 1</td>
+                      <td class="warning">Joint Code 2</td>
+                      <td class="warning">Joint No 2</td>
+
+                      <td class="warning">Thickness 1</td>
+                      <td class="warning">Thinkness 2</td>
+                      <td class="warning">Joint Length</td>
+                      <td class="warning">Joint Type</td>
+                      <td class="warning">Material 1</td>
+                      <td class="warning">Material 2</td>
+
+                      <td class="warning">WPD No</td>
+                      <td class="warning">Fitup Date</td>
+                      <td class="warning">Fitup No</td>
+                      <td class="warning">Welding No</td>
+                      <td class="warning">Welding Date</td>
+                      <td class="warning">Welder 1</td>
+                      <td class="warning">Welder 2</td>
+                      <td class="warning">Welder 3</td>
+                      <td class="warning">Welder 4</td>
+
+                      <td class="warning"> VBT_REQ_date  </td>
+                      <td class="warning"> VBT_REQ_no  </td>
+                      <td class="warning"> VBT_REP_date  </td>
+                      <td class="warning"> VBT_REP_No  </td>
+                      <td class="warning"> OilTest_REQ_Date  </td>
+                      <td class="warning"> OilTest_REQ_No  </td>
+
+                      <td class="warning">OilTest_REP_Date  </td>
+                      <td class="warning">OilTest_REP_No  </td>
+                      <td class="warning">HNT_REQ_Date  </td>
+                      <td class="warning">HNT_REQ_No  </td>
+                      <td class="warning">HT_Value  </td>
+                      <td class="warning">HNT_REP_Date  </td>
+                      <td class="warning">HNT_REP_No  </td>
+
+                      <td class="warning"> PT_REQ_Date   </td>
+                      <td class="warning"> PT_REQ_No   </td>
+                      <td class="warning"> PT_Result   </td>
+                      <td class="warning"> PT_REP_Date   </td>
+                      <td class="warning"> PT_REP_No   </td>
+                      <td class="warning"> MT_REQ_Date   </td>
+                      <td class="warning"> MT_REQ_No   </td>
+                      <td class="warning"> MT_REP_Date   </td>
+                      <td class="warning"> MT_REP_No   </td>
+                      <td class="warning"> HNT_REQ_Date   </td>
+                      <td class="warning"> HNT_REQ_No   </td>
+                      <td class="warning"> HNT_Value   </td>
+                      <td class="warning"> HNT_REP_Date   </td>
+                      <td class="warning"> HNT_REP_No   </td>
+
+                      <td class="warning">RT_Lenght   </td>
+                      <td class="warning">RT_Final_Result   </td>
+                      <td class="warning">UT_Lenght   </td>
+                      <td class="warning">UT_Final_Result   </td>
+                      <td class="warning">PWHT_REQ_Date   </td>
+                      <td class="warning">PWHT_REQ_No   </td>
+                      <td class="warning">PWHT_REP_Date   </td>
+                      <td class="warning">PWHT_REP_No   </td>
+                      <td class="warning">Peaking_Before_Weld_Date   </td>
+                      <td class="warning">Peaking_Before_Weld_No   </td>
+                      <td class="warning">Peaking_Before_Weld_Value   </td>
+
+                      <td class="warning">Peaking_Before_Weld_Deviation</td>
+                      <td class="warning">Peaking_After_Weld_Date</td>
+                      <td class="warning">Peaking_After_Weld_No</td>
+                      <td class="warning">Peaking_After_Weld_Value</td>
+                      <td class="warning">Peaking_After_Weld_Deviation</td>
+                      <td class="warning">Banding_Before_Weld_Date</td>
+                      <td class="warning">Banding_Before_Weld_No</td>
+                      <td class="warning">Banding_Before_Weld_Value</td>
+                      <td class="warning">Banding_Before_Weld_Deviation</td>
+                      <td class="warning">Banding_After_Weld_Date</td>
+                      <td class="warning">Banding_After_Weld_No</td>
+                      <td class="warning">Banding_After_Weld_Value</td>
+                      <td class="warning">Banding_After_Weld_Deviation</td>
+                    </tr>
+                </thead>
+                <tbody>
+                  {% for obj in general_weldings %}
+
+                  <tr>
+                    <td class="active"><a href="{% url 'tanks:general_welding_detail' id=obj.id %}">{{ obj.row }}</a></td>
+                  <td class="active"><a href="{% url 'tanks:general_welding_list' id=obj.id %}">{{ obj.tank }}</a></td>
+                  <td class="active">{{ obj.location_1 }}</td>
+                  <td class="active">{{ obj.location_2 }}</td>
+                  <td class="active">{{ obj.joint_code_1 }}</td>
+                  <td class="active"><a href="{% url 'tanks:graph_show' id=obj.id %}">See</a></td>
+                  <td class="active">{{ obj.joint_no_1 }}</td>
+                  <td class="active">{{ obj.joint_code_2 }}</td>
+                  <td class="active">{{ obj.joint_no_2 }}</td>
+
+                  <td class="active">{{ obj.thickness_1 }}</td>
+                  <td class="active">{{ obj.thickness_2 }}</td>
+                  <td class="active">{{ obj.joint_lenght }}</td>
+                  <td class="active">{{ obj.joint_type }}</td>
+                  <td class="active">{{ obj.material_1 }}</td>
+                  <td class="active">{{ obj.material_2 }}</td>
+
+                  <td class="active">{{ obj.wps_no }}</td>
+                  <td class="active">{{ obj.fitup_date }}</td>
+                  <td class="active">{{ obj.fitup_no }}</td>
+                  <td class="active">{{ obj.welding_no }}</td>
+                  <td class="active">{{ obj.welding_date }}</td>
+                  <td class="active">{{ obj.welder_1 }}</td>
+                  <td class="active">{{ obj.welder_2 }}</td>
+                  <td class="active">{{ obj.welder_3 }}</td>
+                  <td class="active">{{ obj.welder_4 }}</td>
+
+                  <td class="active">{{ obj.VBT_REQ_date   }}</td>
+                  <td class="active">{{ obj.VBT_REQ_no   }}</td>
+                  <td class="active">{{ obj.VBT_REP_date  }}</td>
+                  <td class="active">{{ obj.VBT_REP_No  }}</td>
+                  <td class="active">{{ obj.OilTest_REQ_Date   }}</td>
+                  <td class="active">{{ obj.OilTest_REQ_No   }}</td>
+
+                  <td class="active">{{ obj.OilTest_REP_Date  }}</td>
+                  <td class="active">{{ obj.OilTest_REP_No  }}</td>
+                  <td class="active">{{ obj.HNT_REQ_Date  }}</td>
+                  <td class="active">{{ obj.HNT_REQ_No  }}</td>
+                  <td class="active">{{ obj.HT_Value  }}</td>
+                  <td class="active">{{ obj.HNT_REP_Date   }}</td>
+                  <td class="active">{{ obj.HNT_REP_No   }}</td>
+
+                  <td class="active">{{ obj.PT_REQ_Date   }}</td>
+                  <td class="active">{{ obj.PT_REQ_No   }}</td>
+                  <td class="active">{{ obj.PT_Result   }}</td>
+                  <td class="active">{{ obj.PT_REP_Date   }}</td>
+                  <td class="active">{{ obj.PT_REP_No   }}</td>
+                  <td class="active">{{ obj.MT_REQ_Date   }}</td>
+                  <td class="active">{{ obj.MT_REQ_No   }}</td>
+                  <td class="active">{{ obj.MT_REP_Date   }}</td>
+                  <td class="active">{{ obj.MT_REP_No   }}</td>
+                  <td class="active">{{ obj.HNT_REQ_Date   }}</td>
+                  <td class="active">{{ obj.HNT_REQ_No   }}</td>
+                  <td class="active">{{ obj.HNT_Value   }}</td>
+                  <td class="active">{{ obj.HNT_REP_Date   }}</td>
+                  <td class="active">{{ obj.HNT_REP_No   }}</td>
+
+                  <td class="active">{{ obj.RT_Lenght   }}</td>
+                  <td class="active">{{ obj.RT_Final_Result   }}</td>
+                  <td class="active">{{ obj.UT_Lenght   }}</td>
+                  <td class="active">{{ obj.UT_Final_Result   }}</td>
+                  <td class="active">{{ obj.PWHT_REQ_Date   }}</td>
+                  <td class="active">{{ obj.PWHT_REQ_No   }}</td>
+                  <td class="active">{{ obj.PWHT_REP_Date   }}</td>
+                  <td class="active">{{ obj.PWHT_REP_No   }}</td>
+                  <td class="active">{{ obj.Peaking_Before_Weld_Date   }}</td>
+                  <td class="active">{{ obj.Peaking_Before_Weld_No   }}</td>
+                  <td class="active">{{ obj.Peaking_Before_Weld_Value   }}</td>
+
+                  <td class="active">{{ obj.Peaking_Before_Weld_Deviation   }}</td>
+                  <td class="active">{{ obj.Peaking_After_Weld_Date   }}</td>
+                  <td class="active">{{ obj.Peaking_After_Weld_No   }}</td>
+                  <td class="active">{{ obj.Peaking_After_Weld_Value   }}</td>
+                  <td class="active">{{ obj.Peaking_After_Weld_Deviation   }}</td>
+                  <td class="active">{{ obj.Banding_Before_Weld_Date   }}</td>
+                  <td class="active">{{ obj.Banding_Before_Weld_No   }}</td>
+                  <td class="active">{{ obj.Banding_Before_Weld_Value   }}</td>
+                  <td class="active">{{ obj.Banding_Before_Weld_Deviation   }}</td>
+                  <td class="active">{{ obj.Banding_After_Weld_Date   }}</td>
+                  <td class="active">{{ obj.Banding_After_Weld_No   }}</td>
+                  <td class="active">{{ obj.Banding_After_Weld_Value   }}</td>
+                  <td class="active">{{ obj.Banding_After_Weld_Deviation   }}</td>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              </tr>
+
+
+                  {% endfor %}
+                </tbody>
+            </table>
+        </div>
+
+
+
+
+
+
+
+
+
+
+            <br>
+            <br>
+
+
+
+          </div>
+      </div>
+  </section>
+  <!-- End About Us Area -->
+</div>
+
+
+{% endblock %}

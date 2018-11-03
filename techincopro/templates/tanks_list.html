@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block content %}
+
+<div class="container">
+
+
+
+
+
+
+  <!-- About Us Area -->
+  <section class="about_us_area row">
+      <div class="container-fluid">
+        <div class="subtittle"><br><br><br><br>
+            <h2>Tanks  </h2>
+        </div>
+          <div class="row">
+            <br>
+
+            <div class="table-responsive">
+  <table class="table">
+<tr>
+<td class="warning">Name</td>
+<td class="warning">Subproject</td>
+<td class="warning">General Welding</td>
+<td class="warning">General Part</td>
+<td class="warning">General</td>
+<td class="warning">UT</td>
+<td class="warning">RT</td>
+<td class="warning">WPS</td>
+<td class="warning">PQR</td>
+<td class="warning">Photos</td>
+</tr>
+
+    {% for obj in tanks %}
+
+    <tr>
+  <td class="active">{{ obj.tank_no }}</td>
+  <td class="active">{{ obj.subproject }}</td>
+  <td class="active"><a href="{% url 'tanks:general_welding_list' id=obj.id %}" >More!</a></td>
+  <td class="active"><a href="{% url 'tanks:general_part_detail' id=obj.id %}" >More!</a></td>
+  <td class="active"><a href="{% url 'tanks:general_detail' id=obj.id %}" >More!</a></td>
+  <td class="active"><a href="" >More!</a></td>
+  <td class="active"><a href="{% url 'tanks:rt_list' tank=obj.tank_no %}" >More!</a></td>
+  <td class="active"><a href="" >More!</a></td>
+  <td class="active"><a href="" >More!</a></td>
+  <td class="active"><a href="{% url 'tanks:tanks_photo_list_' id=obj.id %}" >See</a></td>
+
+
+</tr>
+
+
+    {% endfor %}
+  </table>
+</div>
+
+
+            <br>
+            <br>
+
+
+
+          </div>
+      </div>
+  </section>
+  <!-- End About Us Area -->
+</div>
+
+
+{% endblock %}

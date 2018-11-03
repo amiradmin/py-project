@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block content %}
+
+<div class="container">
+
+
+
+
+
+
+  <!-- About Us Area -->
+  <section class="about_us_area row">
+      <div class="container-fluid">
+        <div class="subtittle"><br><br><br><br>
+            <h2>Subrojects of </h2>
+        </div>
+          <div class="row">
+            <br>
+
+            <div class="table-responsive">
+  <table class="table">
+<tr>
+<td class="warning">Name</td>
+<td class="warning">Project</td>
+<td class="warning">Tanks</td>
+<td class="warning">Subcontractor</td>
+<td class="warning">Contractor</td>
+<td class="warning">Consultant</td>
+<td class="warning">TPA</td>
+<td class="warning">MC</td>
+<td class="warning">Owner</td>
+</tr>
+    {% for obj in subprojects %}
+
+    <tr>
+  <td class="active">{{ obj.name }}</td>
+  <td class="active">{{ obj.project }}</td>
+  <td class="active"><a href="{% url 'tanks:tanks_selected_list' id=obj.id %}">Tanks</a></td>
+  <td class="active">{{ obj.subcontractor }}</td>
+  <td class="active">{{ obj.contractor }}</td>
+  <td class="active">{{ obj.consultant }}</td>
+  <td class="active">{{ obj.TPA }}</td>
+  <td class="active">{{ obj.MC }}</td>
+  <td class="active">{{ obj.owner }}</td>
+</tr>
+
+
+    {% endfor %}
+  </table>
+</div>
+
+
+            <br>
+            <br>
+
+
+
+          </div>
+      </div>
+  </section>
+  <!-- End About Us Area -->
+</div>
+
+
+{% endblock %}
